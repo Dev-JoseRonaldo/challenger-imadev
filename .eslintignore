@@ -1,0 +1,6 @@
+!.storybook
+!.jest
+
+**/node_modules/*
+**/out/*
+**/.next/*

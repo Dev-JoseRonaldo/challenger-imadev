@@ -1,3 +1,79 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
+  position: absolute;
+  bottom: -130px;
+  margin-top: 0;
+  font-size: 1rem;
+  font-weight: 900;
+  background-color: #074f97;
+  padding: 0.8rem 1.05rem;
+  border-radius: 50%;
+  color: white;
+}
+
+.swiper .swiper-button-prev::after {
+  left: 246px;
+}
+
+.swiper .swiper-button-next::after {
+  left: -260px;
+}
+
+.swiper:after,
+.swiper:before {
+  content: '';
+  position: absolute;
+  bottom: 21px;
+  width: 250px;
+  height: 2.5px;
+  background-color: #074f9730;
+}
+
+.swiper:after {
+  right: 0;
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .swiper .swiper-button-prev::after {
+    left: 197px;
+  }
+
+  .swiper .swiper-button-next::after {
+    left: -209px;
+  }
+
+  .swiper:after,
+  .swiper:before {
+    bottom: 35px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 640px) {
+  .swiper .swiper-button-prev::after,
+  .swiper .swiper-button-next::after {
+    position: absolute;
+    bottom: -120px;
+    font-size: 0.8rem;
+    padding: 0.7rem 0.9rem;
+    border-radius: 50%;
+  }
+
+  .swiper .swiper-button-prev::after {
+    left: 102px;
+  }
+
+  .swiper .swiper-button-next::after {
+    left: -110px;
+  }
+
+  .swiper:after,
+  .swiper:before {
+    bottom: 28px;
+    width: 107px;
+  }
+}

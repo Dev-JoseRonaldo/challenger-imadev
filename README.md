@@ -1,33 +1,37 @@
-<h1 align="center"> Boilerplate: Next.js 13 + Tailwind + Jest + Storybook </h1>
+<h1 align="center"> Desafio técnico - Im a Developer </h1>
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Dev-JoseRonaldo/boilerplate-next13-tailwind?color=#F7DD43">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Dev-JoseRonaldo/challenger-imadev?color=#F7DD43">
 
-  <a href="https://github.com/Dev-JoseRonaldo/boilerplate-next13-tailwind/blob/main/LICENSE.md">
-    <img alt="Repository size" src="https://img.shields.io/github/repo-size/Dev-JoseRonaldo/boilerplate-next13-tailwind">
+  <a href="https://github.com/Dev-JoseRonaldo/challenger-imadev/blob/main/LICENSE.md">
+    <img alt="Repository size" src="https://img.shields.io/github/repo-size/Dev-JoseRonaldo/challenger-imadev">
   </a>
   
-  <a href="https://github.com/Dev-JoseRonaldo/boilerplate-next13-tailwind/commits/main">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Dev-JoseRonaldo/boilerplate-next13-tailwind">
+  <a href="https://github.com/Dev-JoseRonaldo/challenger-imadev/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Dev-JoseRonaldo/challenger-imadev">
   </a>
     
    <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 
    <a href="https://github.com/Dev-JoseRonaldo/boilerplate-next13-tailwind">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/Dev-JoseRonaldo/boilerplate-next13-tailwind">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/Dev-JoseRonaldo/challenger-imadev">
   </a>
 </p>
 
+ <img width=100% alt="Banner do projeto" src="https://res.cloudinary.com/devjoseronaldo/image/upload/v1672939539/banner_challenger_lb8bzc.gif">
 <br/>
 
 ## 💻 Projeto
 
-Esse é um boilerplate que será usado para o desenvolvimento dos meus próximos projetos pessoais. Nele, imprementei as principais tecnologias e ferramentas que aprendi durante o tempo de estudo, criando um ambiente inicial de desenvolvimento padronizado, organizado e de fácil uso, podendo assim, iniciar rapidamente qualquer novo projeto, que use essas tecnologias, sem a necessidade de configura-las.
+Esse Projeto foi desenvolvido para o desafio técnico da Im a Developer, que consiste em codar uma seção de testimonials seguindo um layout disponibilizado.
+
+-  para visualizar o ```Projeto``` em produção, acesse: https://jose-ronaldo-challenger-imadev.vercel.app/
+- para visualizar o ```Storybook``` em produção, acesse: https://dev-joseronaldo.github.io/challenger-imadev/?path=/story/components-slider--default
 
 ---
 
 ## 🚀 Tecnologias
 
-Esse setup inicial conta com as seguintes tecnologias:
+Foram usadas as seguintes tecnologias e bibliotecas para a realização do projeto:
 
 - [NextJS 13](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -41,7 +45,9 @@ Esse setup inicial conta com as seguintes tecnologias:
 - [Commitlint](https://commitlint.js.org/#/)
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
-- [Github Actions](https://github.com/features/actions)
+- [Framer Motion](https://www.framer.com/)
+- [Swiper](https://swiperjs.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
 
 
 ## 👩🏽‍💻 Como usar ?
@@ -54,18 +60,14 @@ Antes de baixar o projeto você vai precisar ter instalado na sua máquina as se
 * [NodeJS](https://nodejs.org/en/)
 * [Yarn](https://yarnpkg.com/) ou [NPM](https://www.npmjs.com/)
 
-### Usando o template
+### Em seguida:
 
 ```bash
-# Gerando um repositório a partir desse template
-  Clique no botão verde: "Use this template"
-  Clique em "Create a new repository"
-  
-# Clone o repositório gerado
-$ git clone git@github.com:yourUsername/yourRepository.git
+# Clone o repositório
+$ git clone git@github.com:Dev-JoseRonaldo/challenger-imadev.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd yourRepository
+$ cd challenger-imadev
 
 # Abra essa pasta em seu editor de texto favorito
 $ code .
@@ -100,7 +102,7 @@ $ npm run storybook or yarn storybook
 
 ## 📝 Licença
 
-  Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/Dev-JoseRonaldo/ignite-feed/blob/main/LICENSE.md) para mais detalhes.
+  Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/Dev-JoseRonaldo/challenger-imadev/blob/main/LICENSE.md) para mais detalhes.
 
 ---
 

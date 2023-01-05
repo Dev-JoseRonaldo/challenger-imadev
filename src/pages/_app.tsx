@@ -4,6 +4,8 @@ import Head from 'next/head'
 
 import type { AppProps } from 'next/app'
 
+import { motion } from 'framer-motion'
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -27,7 +29,20 @@ function MyApp({ Component, pageProps }: AppProps) {
           href="/favicon-16x16.png"
         />
       </Head>
-      <Component {...pageProps} />
+      <motion.div
+        initial="initial"
+        animate="animate"
+        variants={{
+          initial: {
+            opacity: 0,
+          },
+          animate: {
+            opacity: 1,
+          },
+        }}
+      >
+        <Component {...pageProps} />
+      </motion.div>
     </>
   )
 }

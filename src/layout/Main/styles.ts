@@ -10,6 +10,6 @@ export const TestimonialTitleStyle = `
 
 export const TestimonialContentContainerStyle = `flex items-center justify-center gap-4`
 
-export const TestimonialImageContainerStyle = `relative w-[500px] xl:w-[513px] h-[532px] hidden lg:flex`
+export const TestimonialImageContainerStyle = `relative w-[500px] xl:w-[513px] h-[532px] hidden lg:flex animate-up_down`
 
-export const TestimonialImageStyle = `absolute top-[-60px] left-0 z-0`
+export const TestimonialImageStyle = `absolute top-[-60px] left-0 z-0 animate-infinite_up_down`

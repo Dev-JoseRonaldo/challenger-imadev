@@ -24,6 +24,15 @@ module.exports = {
         testimonial:
           'url(https://res.cloudinary.com/devjoseronaldo/image/upload/v1672868201/bg_evneu9.png)',
       },
+      animation: {
+        infinite_up_down: 'infinite_up_down 8s ease-in-out infinite',
+      },
+      keyframes: {
+        infinite_up_down: {
+          '0%, 100%': { transform: 'translateY(0);' },
+          '50%': { transform: 'translateY(-4%);' },
+        },
+      },
     },
     plugins: [],
   },

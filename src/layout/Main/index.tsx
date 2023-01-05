@@ -1,4 +1,6 @@
+import { useAnimation, motion, useInView } from 'framer-motion'
 import Image from 'next/image'
+import { useEffect, useRef } from 'react'
 import { Slider } from '../../components/Slider'
 import { TestimonialItemProps } from '../../components/TestimonialItem'
 
@@ -23,13 +25,33 @@ export interface MainLayoutProps {
 }
 
 export const MainLayout = ({ testimonialSection }: MainLayoutProps) => {
+  const control = useAnimation()
+  const ref = useRef(null)
+  const isInView = useInView(ref)
+
+  useEffect(() => {
+    if (isInView) {
+      control.start('visible')
+    }
+  }, [control, isInView])
+
   return (
     <>
       <main className={MainContainer}>
         <section id="testimoials" className={TestimonialSectionStyle}>
           <h2 className={TestimonialTitleStyle}>{testimonialSection.title}</h2>
           <div className={TestimonialContentContainerStyle}>
-            <div className={TestimonialImageContainerStyle}>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.2 }}
+              variants={{
+                hidden: { opacity: 0, scale: 0 },
+                visible: { opacity: 1, scale: 1 },
+              }}
+              className={TestimonialImageContainerStyle}
+            >
               <Image
                 src={testimonialSection.imgUrl}
                 alt={testimonialSection.imgAlt}
@@ -37,8 +59,19 @@ export const MainLayout = ({ testimonialSection }: MainLayoutProps) => {
                 height={532}
                 className={TestimonialImageStyle}
               />
-            </div>
-            <Slider data={testimonialSection.testimonials} />
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.4 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0, scale: 0 },
+              }}
+            >
+              <Slider data={testimonialSection.testimonials} />
+            </motion.div>
           </div>
         </section>
       </main>

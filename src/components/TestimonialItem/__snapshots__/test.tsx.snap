@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TestimonialItem /> should match snapshot 1`] = `
+<div>
+  <blockquote
+    class="text-sm sm:text-xl lg:text-lg xl:text-xl font-medium text-gray-500"
+  >
+    <p>
+      Lorem ipsum dolor sit amet consectetur. Enim ac id sapien volutpat.
+    </p>
+    <footer
+      class="text-primary uppercase font-semibold text-base sm:text-xl tracking-wider mt-5"
+    >
+      - 
+      <cite
+        class="not-italic"
+      >
+        BETH RAYLAND
+      </cite>
+    </footer>
+  </blockquote>
+</div>
+`;
